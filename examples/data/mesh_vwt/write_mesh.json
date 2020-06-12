@@ -1,0 +1,68 @@
+{
+  "cmd": "cfd.io.tasks.write_mesh",
+  "case_dir": "foam",
+  "base_mesh": {
+    "type": "simpleBox",
+    "cell_size": 2,
+    "parameters": {
+      "z0": "True",
+      "square": "True"
+    },
+    "bounding_box": {
+      "max": [
+        34738,
+        34738,
+        23910
+      ],
+      "min": [
+        -34738,
+        -34738,
+        0
+      ]
+    }
+  },
+  "task_type": "magpy",
+  "snappyhex_mesh": {
+    "surfaces": {
+      "_7a314f8c-a2d0-4de6-a10c-62622f708531": {
+        "level": {
+          "max": "2",
+          "min": "2"
+        }
+      },
+      "a9b11104-8c5a-47fa-8882-66a439e9416e": {
+        "level": {
+          "max": "2",
+          "min": "2"
+        }
+      },
+      "_4d56052c-19e3-47e8-8665-8953d42cee5f": {
+        "level": {
+          "max": "2",
+          "min": "2"
+        }
+      },
+      "_836b4b5c-e096-48c7-94e8-6a323ba91dd5": {
+        "level": {
+          "max": "2",
+          "min": "2"
+        }
+      },
+      "_03462164-7ad8-4374-b556-ff9fd5cfc93d": {
+        "level": {
+          "max": "2",
+          "min": "2"
+        }
+      }
+    },
+    "overrides": {},
+    "default_surface": {
+      "Plane": {
+        "level": {
+          "max": "3",
+          "min": "3"
+        }
+      }
+    }
+  }
+}
