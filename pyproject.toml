@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "procedural"
-version = "0.1.0"
+version = "0.1.1"
 description = "A Python client for interacting with Procedural's REST APIs."
 authors = ["Christian Kongsgaard <christian@procedural.build>"]
 readme = "README.md"
