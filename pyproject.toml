@@ -1,8 +1,11 @@
 [tool.poetry]
 name = "procedural"
 version = "0.1.0"
-description = ""
+description = "A Python client for interacting with Procedural's REST APIs."
 authors = ["Christian Kongsgaard <christian@procedural.build>"]
+readme = "README.md"
+repository = "https://github.com/procedural-build/procedural-py"
+homepage = "https://github.com/procedural-build/procedural-py"
 
 [tool.poetry.dependencies]
 python = "^3.6"
