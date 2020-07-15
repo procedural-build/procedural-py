@@ -10,22 +10,26 @@
       "solver": "simpleFoam",
       "case_type": "VirtualWindTunnel",
       "boundary_conditions": {
-        "max_y": {
+        "MaxY": {
           "preset": "fixedVelocity",
-          "overrides": "U { value uniform (0 -5 0); }"
+          "overrides": {"U": "{ value uniform (0 -5 0); }"}
         },
-        "min_y": {
+        "MinY": {
           "preset": "fixedPressure"
         },
-        "max_z": {
+        "MaxZ": {
           "preset": "wall",
           "overrides": "wallSlip"
         },
-        "min_x": {
+        "MinZ": {
           "preset": "wall",
           "overrides": "wallSlip"
         },
-        "max_x": {
+        "MinX": {
+          "preset": "wall",
+          "overrides": "wallSlip"
+        },
+        "MaxX": {
           "preset": "wall",
           "overrides": "wallSlip"
         }

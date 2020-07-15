@@ -10,13 +10,13 @@
     },
     "bounding_box": {
       "max": [
-        34738,
-        34738,
-        23910
+        35,
+        35,
+        24
       ],
       "min": [
-        -34738,
-        -34738,
+        -35,
+        -35,
         0
       ]
     }
@@ -24,38 +24,46 @@
   "task_type": "magpy",
   "snappyhex_mesh": {
     "surfaces": {
-      "_7a314f8c-a2d0-4de6-a10c-62622f708531": {
+      "_269c2d39-4173-45a4-8f97-a21f3917d174": {
         "level": {
           "max": "2",
           "min": "2"
         }
       },
-      "a9b11104-8c5a-47fa-8882-66a439e9416e": {
+      "_29ceb925-bb98-4c8c-81c9-6af4f539bceb": {
         "level": {
           "max": "2",
           "min": "2"
         }
       },
-      "_4d56052c-19e3-47e8-8665-8953d42cee5f": {
+      "_3d44c03a-88b0-45cc-a09c-3ebde502a6e3": {
         "level": {
           "max": "2",
           "min": "2"
         }
       },
-      "_836b4b5c-e096-48c7-94e8-6a323ba91dd5": {
+      "_7ba22566-cd83-48ed-afdb-b24808f2d058": {
         "level": {
           "max": "2",
           "min": "2"
         }
       },
-      "_03462164-7ad8-4374-b556-ff9fd5cfc93d": {
+      "_865a46ee-2fb1-47ea-ba98-d340bbb07d07": {
         "level": {
           "max": "2",
           "min": "2"
         }
       }
     },
-    "overrides": {},
+    "overrides": {
+      "castellatedMeshControls": {
+        "locationInMesh": [
+          14.2847305471821,
+          14.2847305471821,
+          16.897621901891
+        ]
+      }
+    },
     "default_surface": {
       "Plane": {
         "level": {

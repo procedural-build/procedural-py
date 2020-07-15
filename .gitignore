@@ -1,3 +1,9 @@
 .idea
 secrets/
 secrets/secrets.md
+
+dist/
+src/procedural.egg-info/
+examples/.ipynb_checkpoints/
+
+**/__pycache__/**

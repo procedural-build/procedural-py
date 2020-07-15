@@ -4,6 +4,8 @@ from datetime import datetime
 import json
 import base64
 
+from procedural.file_handling import encode_files
+
 
 class Client:
     def __init__(self, url, username=None, password=None):
@@ -112,14 +114,13 @@ class Client:
 
         full_path = self._get_full_path(path)
 
-        if not files:
-            try:
-                response = requests.put(full_path, json=data, headers=self._get_headers(extra_headers))
-            except TypeError:
-                response = requests.put(full_path, data=data, headers=self._get_headers(extra_headers))
-        else:
-            # Handle the case of uploading a file. The file cannot be json serialized.
-            response = requests.put(full_path, files=files, headers=self._get_headers(extra_headers))
+        if files:
+            data = encode_files(files)
+
+        try:
+            response = requests.put(full_path, json=data, headers=self._get_headers(extra_headers))
+        except TypeError:
+            response = requests.put(full_path, data=data, headers=self._get_headers(extra_headers))
 
         return self._handle_response(response)
 
