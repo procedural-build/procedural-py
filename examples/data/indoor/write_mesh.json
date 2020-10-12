@@ -1,0 +1,246 @@
+{
+  "task_type": "magpy",
+  "cmd": "cfd.io.tasks.write_mesh",
+  "base_mesh": {
+      "type": "simpleBox",
+      "cell_size": 2.0,
+      "bounding_box": {
+        "min": [
+          5.0,
+          -2.5,
+          -0.5
+        ],
+        "max": [
+          7.0,
+          37.5,
+          9.5
+        ]
+      },
+      "parameters": {
+        "square": "True",
+        "z0": "False"
+      },
+      "set_set_regions": [
+        {
+          "name": "heatZone.__0",
+          "locations": [
+            true,
+            true,
+            false
+          ],
+          "keep_point": [
+            6.46,
+            26.74,
+            6.8
+          ]
+        },
+        {
+          "name": "heatZone.__1",
+          "locations": [
+            true,
+            true,
+            false
+          ],
+          "keep_point": [
+            6.46,
+            26.74,
+            6.8
+          ]
+        }
+      ]
+    },
+  "snappyhex_mesh": {
+      "overrides": {
+        "castellatedMeshControls": {
+          "locationInMesh": [
+            6.3831648809174846,
+            25.163297618349688,
+            6.415824404587422
+          ]
+        }
+      },
+      "default_surface": {
+        "Plane": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        }
+      },
+      "surfaces": {
+        "people.__0": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "people.__1": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "people.__2": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "people.__3": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "people.__4": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "people.__5": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "people.__6": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "people.__7": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "people.__8": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "people.__9": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "people._10": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "people._11": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "people._12": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "openings.__0": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "openings.__1": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "openings.__2": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "openings.__3": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "openings.__4": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "openings.__5": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "facade.__0": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "facade.__1": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "envolope": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "slab.__0": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "slab.__1": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "railing.__0": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "railing.__1": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        }
+      },
+      "refinementRegions": [
+        {
+          "name": "heatZone.__0",
+          "details": {
+            "mode": "inside",
+            "levels": "(( 1 1))"
+          }
+        },
+        {
+          "name": "heatZone.__1",
+          "details": {
+            "mode": "inside",
+            "levels": "(( 1 1))"
+          }
+        }
+      ]
+    },
+  "case_dir": "foam"
+}

@@ -8,16 +8,17 @@ from procedural.file_handling import encode_files
 
 
 class Client:
-    def __init__(self, url, username=None, password=None):
+    def __init__(self, url, username=None, password=None, verify_ssl=False):
         self.url = url
         self._access_token = None
         self._refresh_token = None
+        self.verify_ssl = verify_ssl
         self.get_tokens(username, password)
 
     def get_tokens(self, username, password):
         """Gets the access and refresh token"""
         full_path = os.path.join(self.url, "auth-jwt/get/")
-        response = requests.post(full_path, data={"username": username, "password": password})
+        response = requests.post(full_path, data={"username": username, "password": password}, verify=self.verify_ssl)
 
         if response.status_code == 200:
             data = response.json()
@@ -58,7 +59,7 @@ class Client:
 
     def get_access_token(self):
         full_path = os.path.join(self.url, "auth-jwt/refresh/")
-        response = requests.post(full_path, data={"refresh": self._refresh_token})
+        response = requests.post(full_path, data={"refresh": self._refresh_token}, verify=self.verify_ssl)
 
         if response.status_code == 200:
             data = response.json()
@@ -86,7 +87,8 @@ class Client:
         self.check_token()
 
         full_path = self._get_full_path(path)
-        response = requests.get(full_path, params=query_params, headers=self._get_headers(extra_headers))
+        response = requests.get(full_path, params=query_params, headers=self._get_headers(extra_headers),
+                                verify=self.verify_ssl)
 
         return self._handle_response(response)
 
@@ -94,7 +96,7 @@ class Client:
         self.check_token()
 
         full_path = self._get_full_path(path)
-        response = requests.post(full_path, json=data, headers=self._get_headers(extra_headers))
+        response = requests.post(full_path, json=data, headers=self._get_headers(extra_headers), verify=self.verify_ssl)
 
         return self._handle_response(response)
 
@@ -105,7 +107,7 @@ class Client:
         self.check_token()
 
         full_path = self._get_full_path(path)
-        response = requests.delete(full_path, headers=self._get_headers(extra_headers))
+        response = requests.delete(full_path, headers=self._get_headers(extra_headers), verify=self.verify_ssl)
 
         return self._handle_response(response)
 
@@ -118,9 +120,11 @@ class Client:
             data = encode_files(files)
 
         try:
-            response = requests.put(full_path, json=data, headers=self._get_headers(extra_headers))
+            response = requests.put(full_path, json=data, headers=self._get_headers(extra_headers),
+                                    verify=self.verify_ssl)
         except TypeError:
-            response = requests.put(full_path, data=data, headers=self._get_headers(extra_headers))
+            response = requests.put(full_path, data=data, headers=self._get_headers(extra_headers),
+                                    verify=self.verify_ssl)
 
         return self._handle_response(response)
 

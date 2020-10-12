@@ -1,0 +1,86 @@
+solid heatZone.__1
+facet normal 0 -1 0
+ outer loop
+  vertex 1.263859E-12 6.311099 5
+  vertex 2.841986E-13 6.311099 4.3
+  vertex 12 6.311099 4.3
+ endloop
+endfacet
+facet normal 1 0 0
+ outer loop
+  vertex 12 6.311099 5
+  vertex 12 6.311099 4.3
+  vertex 12 22.02878 4.3
+ endloop
+endfacet
+facet normal 0 1 0
+ outer loop
+  vertex 12 22.02878 5
+  vertex 12 22.02878 4.3
+  vertex 1.263878E-12 22.02878 5
+ endloop
+endfacet
+facet normal -1 1.17783E-18 1.399516E-12
+ outer loop
+  vertex 1.263878E-12 22.02878 5
+  vertex 2.842171E-13 22.02878 4.3
+  vertex 2.841986E-13 6.311099 4.3
+ endloop
+endfacet
+facet normal 0 0 -1
+ outer loop
+  vertex 12 6.311099 4.3
+  vertex 2.841986E-13 6.311099 4.3
+  vertex 2.842171E-13 22.02878 4.3
+ endloop
+endfacet
+facet normal 0 0 1
+ outer loop
+  vertex 12 6.311099 5
+  vertex 12 22.02878 5
+  vertex 1.263878E-12 22.02878 5
+ endloop
+endfacet
+facet normal 0 -1 0
+ outer loop
+  vertex 1.263859E-12 6.311099 5
+  vertex 12 6.311099 4.3
+  vertex 12 6.311099 5
+ endloop
+endfacet
+facet normal 1 0 0
+ outer loop
+  vertex 12 6.311099 5
+  vertex 12 22.02878 4.3
+  vertex 12 22.02878 5
+ endloop
+endfacet
+facet normal 0 1 0
+ outer loop
+  vertex 12 22.02878 4.3
+  vertex 2.842171E-13 22.02878 4.3
+  vertex 1.263878E-12 22.02878 5
+ endloop
+endfacet
+facet normal -1 1.179554E-18 1.399516E-12
+ outer loop
+  vertex 1.263878E-12 22.02878 5
+  vertex 2.841986E-13 6.311099 4.3
+  vertex 1.263859E-12 6.311099 5
+ endloop
+endfacet
+facet normal 0 0 -1
+ outer loop
+  vertex 12 6.311099 4.3
+  vertex 2.842171E-13 22.02878 4.3
+  vertex 12 22.02878 4.3
+ endloop
+endfacet
+facet normal 0 0 1
+ outer loop
+  vertex 12 6.311099 5
+  vertex 1.263878E-12 22.02878 5
+  vertex 1.263859E-12 6.311099 5
+ endloop
+endfacet
+endsolid

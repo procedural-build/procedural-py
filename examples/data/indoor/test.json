@@ -1,0 +1,459 @@
+{
+  "task": {
+    "uid": "8ff88bbb-acfb-41fd-b9e2-aec1bcf225c6",
+    "name": "Version 1",
+    "status": "finished",
+    "started": "2020-09-14T09:49:37.242806",
+    "stopped": "2020-09-14T10:02:51.401799",
+    "created": "2020-09-14T09:43:29.771643",
+    "config": {
+      "case_dir": "foam",
+      "task_type": "parent"
+    },
+    "cluster_base_dir": "/mnt/cluster/projects/20200910_2d-indoor/version-1_8899c332",
+    "meta_json": {
+      "cells": 17251,
+      "faces": 57790,
+      "points": 23609,
+      "internal_faces": 49011
+    },
+    "project": "3e2e564e-45e7-4efd-a6e1-21149501502d"
+  },
+  "project": {
+    "uid": "3e2e564e-45e7-4efd-a6e1-21149501502d",
+    "name": "2D Indoor",
+    "number": 20200910,
+    "cluster": "2a6812b0-9b95-4336-8819-26889a677b18",
+    "path": "/mnt/cluster/projects/20200910_2d-indoor",
+    "path_type": "name",fr
+    "company": "fd1acae4-fcb5-4917-803e-bcc12a904e09"
+  },
+  "auth": {
+    "access": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAwMDc5OTI2LCJqdGkiOiI0NGQyNTQwYjMzYzE0ZmIxYjY0NTFmNWIxYTYxOTJjYyIsInVzZXJfaWQiOiI4M2E3ZDc3Yi0yY2ZjLTQ0Y2QtYjVhNy0yMGJmOTA4NjU4Y2EiLCJmaXJzdF9uYW1lIjoiIiwibGFzdF9uYW1lIjoiIiwiZW1haWwiOiJhZG1pbkBwcm9jZWR1cmFsLmJ1aWxkIiwidXNlcm5hbWUiOiJhZG1pbiIsImlzX3N1cGVydXNlciI6dHJ1ZX0.pPL0GoCCh-q9IPvzGmFSjsg1RmLYtOaQVO0mgLiaBPY",
+    "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYwMDE2NTcyNiwianRpIjoiNGM4NDM3MmUzNWZhNGY4YWJiODhkYzEyODAyM2Q5MzUiLCJ1c2VyX2lkIjoiODNhN2Q3N2ItMmNmYy00NGNkLWI1YTctMjBiZjkwODY1OGNhIiwiZmlyc3RfbmFtZSI6IiIsImxhc3RfbmFtZSI6IiIsImVtYWlsIjoiYWRtaW5AcHJvY2VkdXJhbC5idWlsZCIsInVzZXJuYW1lIjoiYWRtaW4iLCJpc19zdXBlcnVzZXIiOnRydWV9.GyCuuRJnD4BLBP3A4W04Dyw2DHnasnbhbsyhRHV0ufE"
+  },
+  "url": "http://192.168.0.220:8001",
+  "mesh": {
+    "base_mesh": {
+      "type": "simpleBox",
+      "cell_size": 2.0,
+      "bounding_box": {
+        "min": [
+          5.0,
+          -2.5,
+          -0.5
+        ],
+        "max": [
+          7.0,
+          37.5,
+          9.5
+        ]
+      },
+      "parameters": {
+        "square": "True",
+        "z0": "False"
+      },
+      "set_set_regions": [
+        {
+          "name": "heatZone.__0",
+          "locations": [
+            true,
+            true,
+            false
+          ],
+          "keep_point": [
+            6.46,
+            26.74,
+            6.8
+          ]
+        },
+        {
+          "name": "heatZone.__1",
+          "locations": [
+            true,
+            true,
+            false
+          ],
+          "keep_point": [
+            6.46,
+            26.74,
+            6.8
+          ]
+        }
+      ]
+    },
+    "snappy_hex_mesh": {
+      "overrides": {
+        "castellatedMeshControls": {
+          "locationInMesh": [
+            6.3831648809174846,
+            25.163297618349688,
+            6.415824404587422
+          ]
+        }
+      },
+      "default_surface": {
+        "Plane": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        }
+      },
+      "surfaces": {
+        "people.__0": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "people.__1": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "people.__2": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "people.__3": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "people.__4": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "people.__5": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "people.__6": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "people.__7": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "people.__8": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "people.__9": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "people._10": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "people._11": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "people._12": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "openings.__0": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "openings.__1": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "openings.__2": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "openings.__3": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "openings.__4": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "openings.__5": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "facade.__0": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "facade.__1": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "envolope": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "slab.__0": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "slab.__1": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "railing.__0": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        },
+        "railing.__1": {
+          "level": {
+            "min": "3",
+            "max": "3"
+          }
+        }
+      },
+      "refinementRegions": [
+        {
+          "name": "heatZone.__0",
+          "details": {
+            "mode": "inside",
+            "levels": "(( 1 1))"
+          }
+        },
+        {
+          "name": "heatZone.__1",
+          "details": {
+            "mode": "inside",
+            "levels": "(( 1 1))"
+          }
+        }
+      ]
+    }
+  },
+  "cfd_solution": {
+    "cpus": [
+      2,
+      2,
+      1
+    ],
+    "solver": "buoyantSimpleFoam",
+    "case_type": "SimpleCase",
+    "boundary_conditions": {
+      "MaxY": {
+        "preset": "wall"
+      },
+      "MinY": {
+        "preset": "wall"
+      },
+      "MaxZ": {
+        "preset": "wall",
+        "overrides": "wallSlip"
+      },
+      "MinZ": {
+        "preset": "wall",
+        "overrides": "wallSlip"
+      },
+      "MinX": {
+        "preset": "wall",
+        "overrides": "wallSlip"
+      },
+      "MaxX": {
+        "preset": "wall",
+        "overrides": "wallSlip"
+      },
+      "openings.__0": {
+        "preset": "fixedVelocity",
+        "overrides": {
+          "U": "{ value uniform (0 -0.1 0); }"
+        }
+      },
+      "openings.__1": {
+        "preset": "fixedVelocity",
+        "overrides": {
+          "U": "{ value uniform (0 0.1 0); }"
+        }
+      },
+      "openings.__2": {
+        "preset": "fixedVelocity",
+        "overrides": {
+          "U": "{ value uniform (0 0 0.04); }"
+        }
+      },
+      "openings.__3": {
+        "preset": "fixedVelocity",
+        "overrides": {
+          "U": "{ value uniform (0 0 0.04); }"
+        }
+      },
+      "openings.__4": {
+        "preset": "fixedVelocity",
+        "overrides": {
+          "U": "{ value uniform (0 0 0.04); }"
+        }
+      },
+      "openings.__5": {
+        "preset": "fixedPressureOutOnly"
+      },
+      "facade.__0": {
+        "preset": "wall"
+      },
+      "facade.__1": {
+        "preset": "wall"
+      },
+      "envolope": {
+        "preset": "wall"
+      },
+      "slab.__0": {
+        "preset": "wall"
+      },
+      "slab.__1": {
+        "preset": "wall"
+      },
+      "railing.__0": {
+        "preset": "wall"
+      },
+      "railing.__1": {
+        "preset": "wall"
+      },
+      "people.__0": {
+        "preset": "wall",
+        "overrides": {
+          "T": "{ type fixedValue; value uniform 313.15; }"
+        }
+      },
+      "people.__1": {
+        "preset": "wall",
+        "overrides": {
+          "T": "{ type fixedValue; value uniform 313.15; }"
+        }
+      },
+      "people.__2": {
+        "preset": "wall",
+        "overrides": {
+          "T": "{ type fixedValue; value uniform 313.15; }"
+        }
+      },
+      "people.__3": {
+        "preset": "wall",
+        "overrides": {
+          "T": "{ type fixedValue; value uniform 313.15; }"
+        }
+      },
+      "people.__4": {
+        "preset": "wall",
+        "overrides": {
+          "T": "{ type fixedValue; value uniform 313.15; }"
+        }
+      },
+      "people.__5": {
+        "preset": "wall",
+        "overrides": {
+          "T": "{ type fixedValue; value uniform 313.15; }"
+        }
+      },
+      "people.__6": {
+        "preset": "wall",
+        "overrides": {
+          "T": "{ type fixedValue; value uniform 313.15; }"
+        }
+      },
+      "people.__7": {
+        "preset": "wall",
+        "overrides": {
+          "T": "{ type fixedValue; value uniform 313.15; }"
+        }
+      },
+      "people.__8": {
+        "preset": "wall",
+        "overrides": {
+          "T": "{ type fixedValue; value uniform 313.15; }"
+        }
+      },
+      "people.__9": {
+        "preset": "wall",
+        "overrides": {
+          "T": "{ type fixedValue; value uniform 313.15; }"
+        }
+      },
+      "people._10": {
+        "preset": "wall",
+        "overrides": {
+          "T": "{ type fixedValue; value uniform 313.15; }"
+        }
+      },
+      "people._11": {
+        "preset": "wall",
+        "overrides": {
+          "T": "{ type fixedValue; value uniform 313.15; }"
+        }
+      },
+      "people._12": {
+        "preset": "wall",
+        "overrides": {
+          "T": "{ type fixedValue; value uniform 313.15; }"
+        }
+      }
+    },
+    "iterations": {
+      "init": 50
+    },
+    "overrides": {
+      "fields": [
+        "/* \r\nThis is a OpenFOAM formatted dictionary that defines overrides that will be\r\napplied to the \"fields\" definition of your case.  \r\n\r\nThe fields dictionary defines which fields will be used (the files in the 0 folder).\r\nApplying overrides here allows you to define additional fields for the calculation.\r\n\r\nA field will look like this:\r\n```\r\nU\r\n{\r\n  classType volVectorField;\r\n  dimensions [ 0 1 -1 0 0 0 0 ];\r\n  internalField uniform (0 0 0);\r\n}\r\n```\r\n*/\r\n\r\nT\r\n{\r\n  internalField uniform 309;\r\n}",
+        "fvSolution {\r\n  relaxationFactors {    \r\n    U 0.01;\r\n    k 0.01;\r\n    h 0.01;\r\n    epsilon 0.01;\r\n    p 0.3;\r\n  }\r\n}"
+      ],
+      "caseFiles": [
+        "/* These overrides will override settings within casefiles.  \r\n\r\nThe case file that you specify will be created if it does not exist. \r\n\r\nNote that we use a \">\" to define path separators (not a slash \"/\")\r\nthis is because the backend data structure does not support slashes in\r\na dictionary key.\r\n\r\nA case file override looks like this:\r\n```\r\nconstant>porosityProperties {\r\n    testKey value;\r\n}\r\n```\r\n*/\r\n\r\ndecomposeParDict {\r\nnumberOfSubdomains 6;\r\nsimpleCoeffs { n (3 2 1); }\r\nhierarchicalCoeffs { n (3 2 1); }\r\n}\r\n\r\nsystem>fvOptions {\r\n//************************\r\n\r\nheatZone.__0\r\n{\r\n  type scalarSemiImplicitSource;\r\n  active true;\r\n  selectionMode cellSet;\r\n\r\n  scalarSemiImplicitSourceCoeffs\r\n  {\r\n    cellSet heatZone.__0;    \r\n    selectionMode cellSet;\r\n    volumeMode  specific; // absolute\r\n    injectionRateSuSp\r\n    {\r\n      h (61.337 0);\r\n    }\r\n  }\r\n}\r\n\r\n\r\nheatZone.__1\r\n{\r\n  type scalarSemiImplicitSource;\r\n  active true;\r\n  selectionMode cellSet;\r\n\r\n  scalarSemiImplicitSourceCoeffs\r\n  {\r\n    cellSet heatZone.__1;     \r\n    selectionMode cellSet;\r\n    volumeMode  specific; // absolute\r\n    injectionRateSuSp\r\n    {\r\n      h (95.58 0);\r\n    }\r\n  }\r\n}\r\n\r\n\r\n//************************\r\n}\r\n"
+      ],
+      "setup": null,
+      "presets": []
+    },
+    "files": []
+  }
+}
